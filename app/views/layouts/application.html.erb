@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Fredibausstore</title>
+  <title>Fredi Baus Store</title>
 
   <!--Bootstrap CSS starts here-->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
@@ -38,7 +38,9 @@
               
             <ul class="nav navbar-nav" id="nav">
               <li><a href="http://fredibaus.wix.com/fredibaus">Back to site</a></li>
-              <li><%= link_to "Cart", @product %></li>
+              <li>
+              <%= link_to "Cart", @products_path %>
+              </li>
             </ul>
           </div> <!--end navbar-collapse-->
         </div> <!--end navbar header-->
