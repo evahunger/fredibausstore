@@ -1,23 +1,27 @@
+/*Typography starts here*/
+
 h1 {
 	font-size: 60px; 
-	font-family:'Courier PS W04 Regular', Arial, serif;
+	font-family: 'Lora', serif;	
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
 
 h2 {
-	font-family:'Courier PS W04 Regular';
+	font-family: 'Lora', serif;	
 	text-align: center;
+	letter-spacing: 0.1em;
 }
 
 h3 {
-	font-family:'Courier PS W04 Regular';
+	font-family: 'Lora', serif;
 	text-align: center;
 }
 
 body {
 	text-align: center;
+	margin-top: 70px;
 }
 
 table {
@@ -46,6 +50,18 @@ img {
 	margin-right: auto;
 }
 
+#navbar {
+    margin: auto;
+    width: 197px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+#nav li a {
+	text-align: center;
+	font-family: 'Lora', serif;	
+	font-size: 14px;
+}
 
 
 // Place all the styles related to the static_pages controller here.
