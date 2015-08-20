@@ -54,9 +54,9 @@ img {
 	margin-right: auto;
 }
 
-#navbar {
+.navbar {
     margin: auto;
-    width: 275px;
+    width: 280px;
     background-color: white;
     border: 1px solid white;
 }
@@ -77,11 +77,13 @@ img {
 	font-size: 14px;
 	font-family: 'Lora', serif;	
 	font-weight: normal !important;
-	margin-top: 15px;
+	margin-top: 16px;
+	display: inline-block;
 }
 
 #q {
-	display: hidden;
+	width: 20px;
+	display: inline-block;
 }
 
 

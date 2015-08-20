@@ -15,6 +15,7 @@
 
   <!--Hidden Search field starts here-->
   <script>
+  $(document).ready(function(){
     $('#q').on("focus", function(){
       $(this).animate({
         width: "100px"
@@ -26,6 +27,7 @@
         width: "20px",
       });
     });
+  });
   </script>
 
   <!--Google Fonts start here-->
@@ -61,7 +63,7 @@
               <%= form_tag("/products", method: "get") do %>
               <div class="field" id="SearchLabelTag">
 
-              <%= label_tag(:q, "Search") %>
+              <%= label_tag(:q, "") %>
               </div>
 
               <%= text_field_tag(:q) %>
