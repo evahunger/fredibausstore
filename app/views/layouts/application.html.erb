@@ -39,8 +39,20 @@
             <ul class="nav navbar-nav" id="nav">
               <li><a href="http://fredibaus.wix.com/fredibaus">Back to site</a></li>
               <li>
-              <%= link_to "Cart", @products_path %>
+              <%= link_to "Cart", products_path %>
               </li>
+
+              <li>
+              <%= form_tag("/products", method: "get") do %>
+              <div class="field" id="SearchLabelTag">
+              <%= label_tag(:q, "Search") %>
+              </div>  
+              <%= text_field_tag(:q) %>
+              <%= submit_tag("Search") %>
+              <% end %>
+              </li>
+
+
             </ul>
           </div> <!--end navbar-collapse-->
         </div> <!--end navbar header-->

@@ -52,7 +52,7 @@ img {
 
 #navbar {
     margin: auto;
-    width: 197px;
+    width: 275px;
     background-color: white;
     border: 1px solid white;
 }
@@ -61,6 +61,19 @@ img {
 	text-align: center;
 	font-family: 'Lora', serif;	
 	font-size: 14px;
+	font-weight: bold;
+}
+
+#SearchLabelTag {
+	color: grey;
+	font-size: 14px;
+	font-family: 'Lora', serif;	
+	font-weight: normal !important;
+	margin-top: 15px;
+}
+
+#q {
+	width: 20px;
 }
 
 
