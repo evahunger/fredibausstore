@@ -13,6 +13,21 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
+  <!--Hidden Search field starts here-->
+  <script>
+    $('#q').on("focus", function(){
+      $(this).animate({
+        width: "100px"
+      });
+    });
+
+    $('#q').on("blur", function(){
+      $(this).animate({
+        width: "20px",
+      });
+    });
+  </script>
+
   <!--Google Fonts start here-->
   <link href='//fonts.googleapis.com/css?family=Fauna+One|Halant:500|Monofett' rel='stylesheet' type='text/css'>
 
@@ -45,8 +60,10 @@
               <li>
               <%= form_tag("/products", method: "get") do %>
               <div class="field" id="SearchLabelTag">
+
               <%= label_tag(:q, "Search") %>
-              </div>  
+              </div>
+
               <%= text_field_tag(:q) %>
               <%= submit_tag("Search") %>
               <% end %>
