@@ -1,4 +1,9 @@
-/*Typography starts here*/
+body {
+	text-align: center;
+	margin-top: 70px;
+}
+
+// ___________________________________Typography starts here//
 
 h1 {
 	font-size: 60px; 
@@ -12,6 +17,8 @@ h2 {
 	font-family: 'Lora', serif;	
 	text-align: center;
 	letter-spacing: 0.1em;
+	border-bottom: 1px solid #9d9d9d;
+	margin-bottom: 20px;
 }
 
 h3 {
@@ -19,14 +26,14 @@ h3 {
 	text-align: center;
 }
 
-.nav a:hover {
-	color: black;
+h4 {
+	font-family: 'Lora', serif;	
+	text-align: center;
+	margin-top: 20px;
 }
 
-body {
-	text-align: center;
-	margin-top: 70px;
-}
+
+//_________________________________ Product table starts here//
 
 table {
 	width: 50%;
@@ -52,6 +59,14 @@ td {
 img {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+
+// _________________________________ Navbar starts here//
+
+
+.container-fluid {
+	width: 400px;
 }
 
 .navbar {
@@ -86,6 +101,38 @@ img {
 	display: inline-block;
 }
 
+
+//___________________________________ footer starts here//
+
+#footer {
+	margin-top: 15px;
+	width: 100%;
+	text-align: center;
+	border-top: 1px solid #9d9d9d;
+	padding-top: 20px;
+}
+
+#footer a {
+	color: black;
+	font-family: 'Lora', serif;	
+	font-size: 14px;
+	font-weight: bold;
+	color: #9d9d9d;
+}
+
+#footer a:hover {
+	color: black;
+	text-decoration: none;
+	background-color: white;
+}
+
+
+//___________________________________ Contact page starts here//
+
+.row {
+	width: 100%;
+	margin-left: 33%;
+}
 
 
 

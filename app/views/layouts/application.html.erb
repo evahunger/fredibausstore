@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Fredi Baus Store</title>
+  <title>Fredi Baus</title>
 
   <!--Bootstrap CSS starts here-->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
@@ -79,11 +79,17 @@
     </div> <!-- navbar -->
   </nav>
 <!--Navbar ends here-->
-<h1>Fredi Baus Store</h1>
-<h2>Handmade Fashion from Italy</h2>
+<h1>Fredi Baus</h1>
+<h2>Handmade Fashion from Italy<br><br></h2>
+
+<%= yield %>
 
 <!--footer-->
-<%= yield %>
+<footer>
+  <div class="container" id="footer">
+    <%= link_to "Contact", static_pages_contact_path %>
+  </div>
+</footer>
 
 </body>
 </html>
