@@ -63,18 +63,6 @@
               <%= link_to "Cart", products_path %>
               </li>
 
-              <li>
-              <%= form_tag("/products", method: "get") do %>
-              <div class="field" id="SearchLabelTag">
-
-              <%= label_tag(:q, "") %>
-              </div>
-
-              <%= text_field_tag(:q) %>
-              <%= submit_tag("Search") %>
-              <% end %>
-              </li>
-
               <% if user_signed_in? %>
               <li>
               <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
@@ -84,6 +72,22 @@
               <%= link_to('Login', new_user_session_path) %>  
               </li>
               <% end %>
+
+              <li>
+              <%= form_tag("/products", method: "get") do %>
+
+              <div class="field" id="SearchLabelTag">
+              <%= label_tag(:q, "") %>
+              </div>
+
+              <%= text_field_tag(:q) %>
+
+              <div class="field" id="button">
+              <%= submit_tag("Search") %>
+            </div>
+
+              <% end %>
+              </li>
 
             </ul>
           </div> <!--end navbar-collapse-->

@@ -66,12 +66,12 @@ img {
 
 
 .container-fluid {
-	width: 400px;
+	width: 600px;
 }
 
 .navbar {
     margin: auto;
-    width: 280px;
+    width: 290px;
     background-color: white;
     border: 1px solid white;
 }
@@ -98,6 +98,15 @@ img {
 
 #q {
 	width: 20px;
+	display: inline-block;
+}
+
+#button {
+	background-color: black;
+	font-family: 'Lora', serif;	
+	font-weight: normal !important;
+	color: #9d9d9d;
+	font-size: 14px;
 	display: inline-block;
 }
 
