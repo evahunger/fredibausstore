@@ -15,19 +15,27 @@
 
   <!--Hidden Search field starts here-->
   <script>
-  $(document).ready(function(){
-    $('#q').on("focus", function(){
-      $(this).animate({
-        width: "100px"
-      });
-    });
+  var ready;
+  ready = function() {
 
-    $('#q').on("blur", function(){
-      $(this).animate({
-        width: "20px",
+    $(document).ready(function(){
+        $('#q').on("focus", function(){
+          $(this).animate({
+            width: "100px"
+          });
+        });
+
+        $('#q').on("blur", function(){
+          $(this).animate({
+            width: "20px",
+          });
+        });
       });
-    });
-  });
+  };
+
+  $(document).ready(ready);
+  $(document).on('page:load', ready)
+  
   </script>
 
   <!--Google Fonts start here-->
